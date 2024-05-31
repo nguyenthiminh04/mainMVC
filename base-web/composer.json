@@ -1,0 +1,9 @@
+{
+    "name": "minhnt/base",
+    "autoload": {
+        "psr-4": {
+            "Minhnt\\Base\\": "src/"
+        }
+    },
+    "require": {}
+}
