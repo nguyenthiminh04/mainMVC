@@ -7,7 +7,7 @@ use Minhnt\Base\Commons\Controller;
 class HomeController extends Controller
 {
     public function index() {
-        $name = 'DucTV44';
+        $name = 'Minhnt';
 
         $this->renderViewClient('home', [
             'name' => $name

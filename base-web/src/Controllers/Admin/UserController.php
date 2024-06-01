@@ -17,9 +17,12 @@ class UserController extends Controller
 
     public function index()
     {
-        Helper::debug($this->user->findByID(93));
+        [$users, $totalPage] = $this->user->paginate($_GET['page'] ?? 1);
 
-        echo __CLASS__ . '@' . __FUNCTION__;
+        $this->renderViewAdmin('users.index', [
+            'users' => $users, 
+            'totalPage' => $totalPage
+        ]);
     }
 
     public function create()
