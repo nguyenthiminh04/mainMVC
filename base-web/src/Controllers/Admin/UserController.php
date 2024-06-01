@@ -24,6 +24,7 @@ class UserController extends Controller
             'totalPage' => $totalPage
         ]);
     }
+    
 
     public function create()
     {
